@@ -1,15 +1,15 @@
 # CSRNet with CBAM Attention for Crowd Counting
 
-A deep learning-based crowd counting system using the ShanghaiTech Part A dataset. The project enhances a dilated CNN architecture by integrating CBAM attention to improve focus on relevant crowd regions and suppress background noise.
+A deep learning-based crowd counting system using the ShanghaiTech Part A dataset. The project improves a dilated CNN architecture by integrating CBAM attention to focus on relevant crowd regions and suppress background noise.
 
 ## Features
 
-- Crowd counting from input images
+- Crowd counting from images
 - Density map generation
-- VGG-16 based feature extraction
+- VGG-16 feature extraction
 - Dilated convolutional backend
 - CBAM channel and spatial attention
-- MAE and RMSE based evaluation
+- MAE and RMSE evaluation
 
 ## Tech Stack
 
@@ -18,19 +18,25 @@ A deep learning-based crowd counting system using the ShanghaiTech Part A datase
 - OpenCV
 - NumPy
 - h5py
-- Matplotlib
 - CUDA
 
 ## Dataset
 
-ShanghaiTech Part A containing 482 images, with 300 training images and 182 testing images.
+ShanghaiTech Part A with 482 images:
+- 300 training images
+- 182 testing images
 
 ## Results
 
-The proposed VGG-16 + Dilated CNN + CBAM model achieved an MAE of 51.10 on ShanghaiTech Part A.
+The proposed VGG-16 + Dilated CNN + CBAM model achieved:
+
+- MAE: **51.10**
+- RMSE: **94.91**
+
+The baseline DCNN reported an MAE of 52.6, while the proposed model improved the MAE to 51.10. :contentReference[oaicite:0]{index=0}
 
 ## Future Scope
 
 - Evaluation on additional crowd-counting datasets
 - Improved domain generalization
-- Lightweight models for edge deployment
+- Lightweight architecture for edge deployment
